@@ -44,9 +44,43 @@
     <div id="contact-container">
         <h1> Contact Me</h1>
         <h2>Interested in working together? Fill out this form and I'll get back to you soon.</h2>
-    <br>
     </div>
+    <div id="form_container">
+        <form action="https://formspree.io/f/xoqrlkjr" method="post" id="contact_form">
+          <div class="name">
+            <label for="name_input">Name</label>
+            <input type="text" placeholder="My name is" name="name" id="name_input" required>
+          </div>
+          <div class="email">
+            <label for="email_input">Email</label>
+            <input type="email" placeholder="My e-mail is" name="email" id="email_input" required>
+          </div>
 
+          <div class="telephone">
+            <label for="telephone_input">Phone Number</label>
+            <input type="text" placeholder="My number is" name="telephone" id="telephone_input" required>
+          </div>
+
+          <div class="subject">
+            <label for="subject_input">Subject Line</label>
+            <select placeholder="Subject line" name="subject" id="subject_input" required>
+              <option disabled hidden selected>Subject line</option>
+              <option>I'd like to start a project</option>
+              <option>I'd like to ask a question</option>
+              <option>I'd like to make a proposal</option>
+            </select>
+          </div>
+
+          <div class="message">
+            <label for="message_input">Message</label>
+            <textarea name="message" placeholder="I'd like to chat about" id="message_input" cols="30" rows="5" required></textarea>
+          </div>
+
+          <div class="submit">
+            <input type="submit" value="Send Message" id="form_button" />
+          </div>
+        </form><!-- // End form -->
+      </div><!-- // End #container -->
     </main>
 
     <footer>

@@ -2,6 +2,8 @@
     box-sizing: border-box;
 }
 
+/* ------------Navigation Bar ---------------- */
+
 nav{
     display: flex;
     flex-direction: column;
@@ -27,21 +29,7 @@ nav li{
     font-size: 12px;
 }
 
-/* nav{
-    border: solid 2px #000;
-    border-bottom-left-radius:25px;
-    border-bottom-right-radius:25px;
-} */
-
- /* #project2{
-    /* grid-column: 5 / span 1; 
-    justify-self: flex-end;
-}  
-
-/* #project3{
-    /* grid-column: 6 / span 1;  
-    justify-self:flex-end;
-} */
+/* ---------- End Navigation Bar -------------- */
 
 .active{
     font-weight: 700;
@@ -50,21 +38,21 @@ nav li{
 
 body{
     font-family: 'Roboto', 'Helvetica', sans-serif;
-    padding: 0px 100px;
+    padding: 0px 3vh;
     box-sizing: border-box;
 }
 
 main{
     box-sizing: border-box;
     background-color: #FFFFFF;
-    padding: 5vh;
+    padding: 1vh;
 }
 
 main div{
     margin: 0px 20px;
 }
 
-h1, h2, h3, h4{
+h1, h2, h3, h4, form{
     font-family: 'IBM Plex Mono', monospace;
 }
 h1{ font-size: x-large;
@@ -80,12 +68,14 @@ h4{ font-size: medium;
     text-decoration: underline;}
 
 h1, h2, h3, h4, p {
-    margin-top: 10px;
-    margin-bottom:10px;
+    margin-top: 20px;
+    margin-bottom:20px;
+    line-height: 1.5;
 }
 
 nav a{ color: #fff;
     text-decoration: none;}
+
 
 p a{color: #000;}
 
@@ -101,6 +91,7 @@ a:hover{ text-decoration: underline;
 main ul {
     list-style-type: square;
     margin-left: 35px;
+    line-height: 1.25;
 }
 
 img{
@@ -119,11 +110,6 @@ img:hover{
     border: solid #188040 3px;
 }
 
-/* #profile_pic{
-    object-fit:cover;
-    border-radius:50%;
-} */
-
 .banner{
     width:100%;
     height: 200px;
@@ -139,23 +125,56 @@ img:hover{
     50% {opacity: 50%; width: 60%}
     100% {opacity:100%; width:100%;}
 }
- 
+
 .gallery{
     display:grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
 }
 
-.gallery img{
+img{
     object-fit:cover;
     width: 95%;
     justify-self:center;
 }
+
 
 .container img:nth-child(odd){
     border: dashed #B1CA6D 5px;
     border-radius: 10px;
 }
 
+#profile_pic_container{
+    width: 200px;
+    height: 200px;
+    position: relative;
+    margin-left:auto;
+    margin-right: auto;
+    overflow:hidden;
+    border-radius: 50%;
+    border: solid #188040 1px;
+}
+
+#profile_pic_container:hover{
+    box-shadow: 10px 10px 1px #9D206D;
+    border: solid #188040 3px;
+}
+
+#profile_pic{
+    width: 225px;
+    display: inline;
+    object-position: -15px -20px;
+    margin-top: auto;
+    margin-left: auto;
+    border: none;
+    padding: 0px;
+    }
+
+#profile_pic:hover{
+    box-shadow: none;
+    border: none;
+}
+
+/* ------------- Footer --------------- */
 footer{
     background-color:#188040;
     padding:15px;
@@ -174,12 +193,202 @@ footer a{
     font-size: 14px;
 }
 
+/* ------------- End Footer --------------- */
+
+/* ------------- Background Image --------------- */
 .homepage, .contact-page{
     background-image: url('../images/contact-page-pexels-dids.jpg');
     background-repeat: repeat;
     background-size:cover;
     background-color: rgba(255,255,255,0.8)
 }
+
+/* ------------- End Background Image --------------- */
+
+/* ------------- Form --------------- */
+
+#form_container button{
+    overflow: visible;
+      }
+#form_container button, #for_comtainer select{
+    text-transform: none;
+      }
+#form_container button, #form_container input, #form_container select, #form_container textarea {
+        color: #5A5A5A;
+        font: inherit;
+        margin: 0;
+      }
+#form_container input {
+    line-height: normal;
+      }
+#form_container textarea {
+        overflow: auto;
+      }
+
+#form_container {
+    border: solid 3px #474544;
+    max-width: 768px;
+    margin: 60px auto;
+    position: relative;
+    }
+
+#form_container div{
+    margin: 30px;
+}
+#form_container label{
+    margin-bottom: 20px;
+    text-transform:uppercase;
+}
+
+form {
+    padding: 37.5px;
+    margin: 50px 0;
+    }
+
+form h1 {
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: 7px;
+    text-align: center;
+    }
+
+form .underline {
+    border-bottom: solid 2px #474544;
+    margin: -0.512em auto;
+    width: 80px;
+    }
+
+form input[type='text'], [type='email'], form select, form textarea {
+    background: none;
+    border: none;
+        border-bottom: solid 2px #474544;
+        color: #768776;
+        font-size: 1.000em;
+    font-weight: 400;
+    letter-spacing: 1px;
+        margin: 0em 0 1.875em 0;
+        padding: 0 0 0.875em 0;
+        width: 100%;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -ms-box-sizing: border-box;
+        -o-box-sizing: border-box;
+        box-sizing: border-box;
+        -webkit-transition: all 0.3s;
+        -moz-transition: all 0.3s;
+        -ms-transition: all 0.3s;
+        -o-transition: all 0.3s;
+        transition: all 0.3s;
+      }
+
+form input[type='text']:focus, [type='email']:focus, form textarea:focus {
+          outline: none;
+          padding: 0 0 0.875em 0;
+      }
+
+form .message {
+          float: none;
+      }
+
+form select {
+    background: url('https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-ios7-arrow-down-32.png') no-repeat right;
+    outline: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    }
+
+form select::-ms-expand {
+        display: none;
+      }
+
+form textarea {
+          line-height: 150%;
+          height: 150px;
+          resize: none;
+        width: 100%;
+      }
+::-webkit-input-placeholder {
+    color: #768776;
+}
+
+:-moz-placeholder { 
+    color: #768776;
+    opacity: 1;
+}
+      
+::-moz-placeholder {
+    color: #768776;
+    opacity: 1;
+}
+      
+:-ms-input-placeholder {
+    color: #768776;
+}
+#form_button {
+    background: none;
+    border: solid 2px #000;
+    color: #000;
+    cursor: pointer;
+    display: inline-block;
+    font-family: 'Helvetica', Arial, sans-serif;
+    font-size: 0.875em;
+    font-weight: bold;
+    outline: none;
+    padding: 20px 35px;
+    text-transform: uppercase;
+    -webkit-transition: all 0.3s;
+        -moz-transition: all 0.3s;
+        -ms-transition: all 0.3s;
+        -o-transition: all 0.3s;
+        transition: all 0.3s;
+    }
+
+#form_button:hover {
+background: #474544;
+color: #F2F3EB;
+}
+
+/* ------------- End Form --------------- */
+
+/* @media screen and (max-width: 768px) {
+#container {
+    margin: 20px auto;
+    width: 95%;
+}
+}
+
+@media screen and (max-width: 480px) {
+h1 {
+    font-size: 26px;
+}
+
+.underline {
+    width: 68px;
+}
+
+#form_button {
+    padding: 15px 25px;
+}
+}
+
+@media screen and (max-width: 420px) {
+h1 {
+    font-size: 18px;
+}
+
+.icon {
+    height: 35px;
+    width: 35px;
+}
+
+.underline {
+    width: 53px;
+}
+
+input[type='text'], [type='email'], select, textarea {
+    font-size: 0.875em;
+}
+} */
 
 @media only screen and (min-width:900px) {
     nav ul{
@@ -200,6 +409,14 @@ footer a{
         justify-self:flex-start;
     }
 
+    body{
+        padding: 0px 10vh 5vh;
+    }
+
+    main{
+        padding: 5vh;
+    }
+
     nav li{
         background-color: #188040;
         padding: 15px;
@@ -217,9 +434,28 @@ footer a{
          margin: 0px;
          flex-basis: 80vw;
      }
+     img{
+         width: 50%;
+     }
+
+     .gallery{
+         display:grid;
+         grid-template-columns: 1fr 1fr;
+     }
+
+     .gallery img{
+        width: 95%;
+     }
 
      #project1{
         border-top-left-radius: 25px;
         /* justify-self:flex-end; */
+    }
+
+}
+
+@media screen and (prefers-reduced-motion: reduce){
+    .banner{
+        animation: none;
     }
 }
