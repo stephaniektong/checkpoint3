@@ -159,6 +159,8 @@ img{
     border: solid #188040 3px;
 }
 
+
+
 #profile_pic{
     width: 225px;
     display: inline;
@@ -346,6 +348,10 @@ form textarea {
 #form_button:hover {
 background: #474544;
 color: #F2F3EB;
+}
+
+.fa-envelope, .fa-linkedin, .fa-rectangle-list{
+    color: #FFFFFF;
 }
 
 /* ------------- End Form --------------- */
