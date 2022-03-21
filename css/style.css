@@ -390,7 +390,7 @@ input[type='text'], [type='email'], select, textarea {
 }
 } */
 
-@media only screen and (min-width:900px) {
+/* @media only screen and (min-width:900px) {
     nav ul{
         display: flex;
         flex-direction: row;
@@ -400,11 +400,10 @@ input[type='text'], [type='email'], select, textarea {
     }
 
     #home{
-        /* padding: 15px 30px; */
-        /* grid-column: 1 / span 1;*/
+        
         border-top-right-radius: 25px; 
         border-top-left-radius: 0px;
-        /* margin-right: 50px; */
+  
         font-size: 24px;
         justify-self:flex-start;
     }
@@ -449,10 +448,15 @@ input[type='text'], [type='email'], select, textarea {
 
      #project1{
         border-top-left-radius: 25px;
-        /* justify-self:flex-end; */
+        /* justify-self:flex-end; 
     }
 
-}
+}*/
+
+      /* Commented out code for #home
+      padding: 15px 30px; 
+         grid-column: 1 / span 1;
+         margin-right: 50px; */
 
 @media screen and (prefers-reduced-motion: reduce){
     .banner{
