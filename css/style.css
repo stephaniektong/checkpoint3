@@ -86,6 +86,11 @@ a:hover{ text-decoration: underline;
     color: #000;
     background-color: #FAE790;
     font-family: 'IBM Plex Mono', monospace;
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    overflow:hidden;
+    
 }
 
 main ul {
@@ -131,10 +136,22 @@ img:hover{
     grid-template-columns: 1fr;
 }
 
+.gallery-flex{
+    display:flex;
+    flex-wrap:wrap;
+    align-content:stretch;
+
+}
+
 img{
     object-fit:cover;
     width: 95%;
     justify-self:center;
+}
+
+.gallery-flex img{
+    object-fit:fill;
+
 }
 
 
@@ -212,7 +229,7 @@ footer a{
 #form_container button{
     overflow: visible;
       }
-#form_container button, #for_comtainer select{
+#form_container button, #form_comtainer select{
     text-transform: none;
       }
 #form_container button, #form_container input, #form_container select, #form_container textarea {
@@ -349,6 +366,8 @@ form textarea {
 background: #474544;
 color: #F2F3EB;
 }
+
+/* Font-Awesome icons */
 
 .fa-envelope, .fa-linkedin, .fa-rectangle-list{
     color: #FFFFFF;
